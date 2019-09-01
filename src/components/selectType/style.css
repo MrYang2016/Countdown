@@ -1,0 +1,69 @@
+.timeType,
+.timeType-option {
+  color: #ea9999;
+  font-family: "Courier New";
+  font-size: 30px;
+}
+
+.timeType {
+  border: 0;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #eee;
+  background: transparent;
+  appearance: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari 和 Chrome */
+
+  left:50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.timeType_out{
+  display: inline-block;
+  position: relative;
+}
+.selectType{
+  position: relative;
+  left:50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.timeType_out:after{
+  content: '';
+  background: url(./arrow.png) no-repeat;
+  background-size: 16px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: -20px;
+  top:50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.timeType-option {
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  /* background: url("./arrow.png") no-repeat scroll right center transparent;
+  background-position-x: 330px; */
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+  display: none;
+}

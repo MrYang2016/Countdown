@@ -1,0 +1,28 @@
+.timeProgress {
+  /* border-radius: 50%;
+  border: 5px solid #ea9999; */
+  margin-top: 30px;
+  position: relative;
+}
+.timeProgress-time {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.timeProgress-dot{
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #ea9999;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+.timeProgress-canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
